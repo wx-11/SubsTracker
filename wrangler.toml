@@ -18,3 +18,10 @@ crons = ["0 * * * *"]
 # 环境变量（可选，也可以在 Cloudflare Dashboard 中设置）
 [vars]
 ENVIRONMENT = "production"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
