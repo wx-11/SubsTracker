@@ -9,7 +9,9 @@ name = "subscription-manager"
 [env.staging]
 name = "subscription-manager-staging"
 
-# KV 命名空间配置（默认模板不预设固定 ID，运行 npm run setup 自动生成）
+[[kv_namespaces]]
+binding = "SUBSCRIPTIONS_KV"
+id = "22be7ac4543c4ecba9a496e50c3da664"
 
 # 静态资源：托管 public/ 目录下的 JS/CSS/HTML 给浏览器
 # 使用方式：浏览器访问 /js/lib/api-client.js 等同于 public/js/lib/api-client.js
